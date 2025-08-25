@@ -10,4 +10,10 @@ const campoResultado = document.querySelector("#resultado-palavrachave"):
 
 const palavrasChave processa Texto(texto);
 
-campo Resultado.textContent = palavras Chave.join(".");                           
+campo Resultado.textContent = palavras Chave.join(".");  
+}                         
+function processa Texto(texto) {
+
+let palavras = texto.split(/\P{L}+/u);
+return palavras;
+}  
